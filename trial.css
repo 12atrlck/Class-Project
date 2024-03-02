@@ -15,7 +15,7 @@
     /* justify-content: space-evenly; */
 }
 
-@media only screen and (max-width: 600px){
+@media only screen and (max-width: 479px){
     .container{
         width: 100%;
         height: 97vh;
@@ -36,15 +36,19 @@
     flex-direction: column;
 }
 
-@media only screen and (max-width: 600px){
+@media only screen and (max-width: 479px){
     .small{
         width: 100%;
-        height: 30vh;
+        height: 35vh;
         background-color: gold;
         display: flex;
         justify-content: space-between;
         flex-direction: column;
     }
+}
+
+@media only screen and (min-width: 480;)(max-width: 767px){
+    
 }
 
 .front{
@@ -57,14 +61,14 @@
     border-radius: 8%;
 }
 
-@media only screen and (max-width: 600px){
+@media only screen and (max-width: 479px){
     .front{
-        position: relative;
-        width: 80%;
-        height: 190%;
+        position: absolute;
+        width: 83%;
+        height: 25vh;
         background-color: rgb(97, 97, 167);
         border-radius: 8%;
-        top: 65%;
+        top: 13%;
         left: 3%;
     }
 }
@@ -79,14 +83,15 @@
     border-radius: 8%;
 }
 
-@media only screen and (max-width: 600px){
+@media only screen and (max-width: 479px){
     .back{
-        position: relative;
-        width: 80%;
-        height: 180%;
+        position: absolute;
+        width: 83%;
+        height: 25vh;
         background-color: #87b320;
         border-radius: 8%;
-        bottom: 10%;
+        top: 5%;
+        left: 15%;
     }
 }
 
@@ -99,7 +104,7 @@
     align-items: center;
 }
 
-@media only screen and (max-width: 600px){
+@media only screen and (max-width: 479px){
     .big{
         width: 95%;
         height: 70vh;
@@ -119,7 +124,7 @@ form{
     margin-left: 37%;
 }
 
-@media only screen and (max-width: 600px){
+@media only screen and (max-width: 479px){
     form{
         width: 100%;
         height: 65vh;
@@ -138,6 +143,17 @@ form{
     background-color: blanchedalmond;
     justify-content: space-between;
     flex-direction: column;
+}
+
+@media only screen and (max-width: 479px){
+    .main{
+        width: 100%;
+        height: 50vh;
+        display: flex;
+        background-color: blanchedalmond;
+        justify-content: space-between;
+        flex-direction: column;
+    }
 }
 
 .name{
@@ -193,6 +209,7 @@ input{
     border-radius: 0.75vh;
     border: none;
     padding-left: 15px;
+    font-family: Roboto Slab;
 }
 
 .card-details input{
