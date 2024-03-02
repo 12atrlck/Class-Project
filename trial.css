@@ -30,7 +30,8 @@
 .small{
     width: 30%;
     height: 100vh;
-    background-color: aquamarine;
+    /* background-color: aquamarine; */
+    background-image: linear-gradient(to right, rgba(34,9,48,255), rgba(69,27,63,255), rgba(46,43,90,255), rgba(30,8,44,255));
     display: flex;
     justify-content: space-between;
     flex-direction: column;
@@ -39,16 +40,26 @@
 @media only screen and (max-width: 479px){
     .small{
         width: 100%;
-        height: 35vh;
-        background-color: gold;
+        height: 45%;
+        z-index: 1;
+        /* background-color: gold; */
+        background-image: linear-gradient(to right, rgba(34,9,48,255), rgba(69,27,63,255), rgba(30,8,44,255));
         display: flex;
         justify-content: space-between;
         flex-direction: column;
     }
 }
 
-@media only screen and (min-width: 480;)(max-width: 767px){
-    
+@media only screen and (min-width: 480px) and (max-width: 767px){
+    .small{
+        width: 30%;
+        height: 100vh;
+        /* background-color: aquamarine; */
+        background-image: linear-gradient(to right, rgba(34,9,48,255), rgba(69,27,63,255), rgba(46,43,90,255), rgba(30,8,44,255));
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+    }
 }
 
 .front{
@@ -58,17 +69,19 @@
     width: 100%;
     height: 30vh;
     background-color: blue;
-    border-radius: 8%;
+    border-radius: 0.75rem;
 }
 
 @media only screen and (max-width: 479px){
     .front{
         position: absolute;
-        width: 83%;
+        width: 80%;
         height: 25vh;
-        background-color: rgb(97, 97, 167);
-        border-radius: 8%;
-        top: 13%;
+        /* background-color: rgb(97, 97, 167); */
+        background-image: url(Screenshot\ 2024-03-02\ 143343.png);
+        background-size: cover;
+        border-radius: 0.75rem;
+        top: 19%;
         left: 3%;
     }
 }
@@ -77,21 +90,24 @@
     position: relative;
     left: 50%;
     bottom: 17.5%; 
-    width: 100%;
+    width: 95%;
     height: 30vh;
     background-color: #fff;
-    border-radius: 8%;
+    border-radius: 0.75rem;
 }
 
 @media only screen and (max-width: 479px){
     .back{
         position: absolute;
-        width: 83%;
+        width: 78%;
         height: 25vh;
-        background-color: #87b320;
-        border-radius: 8%;
+        z-index: -1;
+        /* background-color: #87b320; */
+        /* image: url(Screenshot\ 2024-03-02\ 143425.png); */
+        background-size: cover;
+        border-radius: 0.75rem;
         top: 5%;
-        left: 15%;
+        left: 20%;
     }
 }
 
@@ -115,9 +131,19 @@
     }
 }
 
+@media only screen and (min-width: 480px) and (max-width: 767px){
+    .big{
+        width: 70%;
+        height: 70vh;
+        background-color: cornflowerblue;
+        display: flex;
+        align-items: center;
+    }
+}
+
 form{
     width: 36%;
-    height: 70vh;
+    height: 75%;
     background-color: aquamarine;
     display: flex;
     align-items: center;
@@ -127,19 +153,32 @@ form{
 @media only screen and (max-width: 479px){
     form{
         width: 100%;
-        height: 65vh;
+        height: 75%;
         background-color: aquamarine;
         display: flex;
         align-items: center;
         margin-left: 0;
+        margin-top: 10%;
+    }
+}
+
+@media only screen and (min-width: 480px) and(max-width: 767px){
+    form{
+        width: 50%;
+        height: 75%;
+        background-color: blue;
+        display: flex;
+        align-items: center;
+        margin-left: 37%;
+        margin-top: 0;
     }
 }
 
 .main{
     width: 87%;
-    height: 50vh;
+    height: 130px;
     display: flex;
-    /* align-items: center; */
+    align-items: center;
     background-color: blanchedalmond;
     justify-content: space-between;
     flex-direction: column;
@@ -148,9 +187,21 @@ form{
 @media only screen and (max-width: 479px){
     .main{
         width: 100%;
-        height: 50vh;
+        height: 100%;
         display: flex;
         background-color: blanchedalmond;
+        justify-content: space-between;
+        flex-direction: column;
+    }
+}
+
+@media only screen and (min-width: 480px) and(max-width: 767px){
+    .main{
+        width: 87%;
+        height: 130px;
+        display: flex;
+        align-items: center;
+        /* background-color: blanchedalmond; */
         justify-content: space-between;
         flex-direction: column;
     }
@@ -209,7 +260,6 @@ input{
     border-radius: 0.75vh;
     border: none;
     padding-left: 15px;
-    font-family: Roboto Slab;
 }
 
 .card-details input{
@@ -237,4 +287,6 @@ button{
     border-radius: 0.75vh;
     border: none;
     padding-left: 15px;
-}
+    background-color: rgba(34,9,48,255);
+    color: whitesmoke;
+    font-size: 120%;
