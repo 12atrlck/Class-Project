@@ -263,7 +263,7 @@ input{
     border: 2px solid rgba(196,193,199,255);
     padding-left: 15px;
     font-family: "Roboto", sans-serif;
-    color: rgba(196,193,199,255);
+    /* color: rgba(196,193,199,255); */
 }
 
 .card-details input{
