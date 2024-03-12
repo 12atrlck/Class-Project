@@ -11,9 +11,9 @@ function checkOdd() {
     if(typeof numberToBeChecked === 'number'){
        if(numberToBeChecked < 18){
        // document.getElementById().innerHTML
-       result.innerHTML = 'you are not allowed to take alchol'
+       result.innerHTML = 'you are not allowed to take alcohol'
        } else{
-        result.innerHTML = 'you are allowed to take alchol'
+        result.innerHTML = 'you are allowed to take alcohol'
        }
     } else{
        result.innerHTML = ('You have entered an invalid character')
